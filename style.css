@@ -13,14 +13,24 @@
     background-size: cover;
     padding: 0 8%;
     position: relative;
+    overflow: hidden;
 }
 
-.logo{
-    width: 120px;
-    padding: 20px;
-    cursor: pointer;
+/* .logo{
+    width: 80px;
+    padding: 20px 2px;
+    height: auto;
+} */
 
+
+.logo img{
+    width: 350px;
+    padding: 20px 2px;
+    height: auto;
+    /* overflow: hidden; */
+    /* cursor: pointer; */
 }
+
 .content{
 
     top: 60%;
@@ -47,7 +57,7 @@
 }
 
 .content button{
-    background:transparent ;
+    background:transparent;
     border:2px solid #fff;
     outline: none;
     padding:12px 25px ;
@@ -56,13 +66,21 @@
     align-items: center;
     margin-top: 30px;
     cursor: pointer;
+    font-size: 15px;
+    border-color: #eabd23;
+    transition: transform 0.6s;
 
 }
 
-.content button img{
-    width: 15px;
-    margin-left: 10px;
+.content button:hover{
+    color:#eabd23;
+    transform: translateY(-5px);
+}
 
+.content button i{
+    width: 30px;
+    margin-left: 10px;
+    font-size: 30px;
 }
 
 .launch-time{
@@ -70,11 +88,11 @@
 }
 
 .launch-time div{
-    flex-basis: 100%;
+    flex-basis: 20%;
 }
 
 .launch-time div p{
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: -14px;
 }
 
@@ -84,7 +102,7 @@
     right: 10%;
     bottom: 0;
     animation: rocket 4s linear infinite;
-    color: #eabd23;
+   
 }
 
 @keyframes rocket {
@@ -103,6 +121,24 @@
 }
 
 .copyright{
-    margin-top: 120px;
+    margin-top: 70px;
     list-style: none;
+}
+
+.social-icons {
+    margin-top: 35px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 30px;
+    color: #fff; /* Adjust the color as needed */
+    font-size: 24px;
+    transition: transform 0.6s;
+
+}
+
+.social-icons a:hover {
+    color: #eabd23; /* Adjust the hover color as needed */
+    transform: translateY(-5px);
 }
